@@ -7,8 +7,14 @@
   </head>
 
   <body>
-
-
+    <div ng-app="purpleHippo">
+      <div ng-controller="fooCtrl">
+        <input ng-model="dog">
+        <p>{{ dogName() }}</p>
+        <input ng-model="numbers">
+        <p>{{ sum() }}</p>
+      </div>
+    </div>
 
 
 
@@ -17,5 +23,6 @@
     <script type="text/javascript" src="vendor/js/angular.js"></script>
 
     <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/foo_ctrl.js"></script>
   </body>
 </html>
